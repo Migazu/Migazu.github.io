@@ -3,4 +3,5 @@ text-align: center;}
 
 p {text-align: center;}
 
-<body style="background-color:#33475b">
+body {
+  background-color: #DBF9FC;}
