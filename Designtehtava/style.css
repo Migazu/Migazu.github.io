@@ -72,8 +72,15 @@ header h1 {
 
 /*Menu*/
 #main-menu { 
-	
-	
+	list-style-type: none;
+  	border: none;
+  	padding: 10px 10px;
+  	text-align: center;
+  	text-decoration: none;
+  	color: white;
+
+	display: flex; flex-wrap:wrap; justify-content: center; 
+ 
 	/*Voit tehdä tästä flexboxin, 
 	niin valikon napit menevät vierekkäin*/
 
@@ -88,7 +95,13 @@ header h1 {
 #main-menu li {
 	/*Laita tässä ja marginaalit paddingit paremmin, 
 	niin näyttää tyylikkäämmältä */
-
+	padding: 10px;
+	background-color: #be7c4d;
+	margin: 10px;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+	font-size: 30px;
+	
 	/*Voi muokata täällä myös background-, color-arvoja.*/
 
 }
@@ -97,7 +110,7 @@ header h1 {
 #main-menu a { 
 
 	text-decoration: none; /*poistaa linkin alleviivauksen*/
-
+	color: white;
 	/*Voi muokata täällä myös background-, color- 
 	font-size- ja font-family-arvoja.*/
 
@@ -116,6 +129,7 @@ header h1 {
 /*------- ARTICLE BUTTONS -------------------*/
 /*Button in end of each article*/
 .button { position: absolute;
+	
 	border: none;
 	background-color: #be7c4d;
 	padding: 10px 10px;
