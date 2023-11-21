@@ -101,7 +101,7 @@ header h1 {
 	border-radius: 8px;
 	transition-duration: 0.4s;
 	font-size: 30px;
-	
+	box-shadow: 0px 2px 10px rgba(0,0,0,50%);
 	/*Voi muokata täällä myös background-, color-arvoja.*/
 
 }
@@ -141,6 +141,7 @@ header h1 {
 	transition-duration: 0.4s;
 	cursor: pointer;
 	border-radius: 8px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,50%);
 
 	/*saatat haluta tehdä napista aika samanlaisen
 	kuin valikkolinkit, mutta toisenlainenkin 
