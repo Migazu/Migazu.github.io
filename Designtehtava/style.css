@@ -1,28 +1,33 @@
-
-
-
- /*----------------------------*/
- /*                            */
- /*  EDIT THIS FILE TO APPLY   */
- /*  YOUR DESIRED STYLE!       */
- /*                            */
- /*----------------------------*/
+/*----------------------------*/
+/*                            */
+/*  EDIT THIS FILE TO APPLY   */
+/*  YOUR DESIRED STYLE!       */
+/*                            */
+/*----------------------------*/
 
 
 
 /*--------- BACKGROUND ---------------------*/
 
-html { 
+html {
 	/*koko sivun tausta on valkoinen.
 	Muuta haluamaksesi*/
-	background: #CCD7E4; 
-	
-	font-family: Inconsolata; color: white;
+	background: #CCD7E4;
+
+	font-family: Inconsolata;
+	color: white;
 
 
-	h1, h2, h3, h4, h5, h6 {
-		font-family: Karla; color: white;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: Karla;
+		color: white;
 	}
+
 	/*Jos määrität html-tagissa fontteja, 
 	taustavärejä tai tekstin värejä,
 	samat määritykset tulevat kaikkiin sisällä oleviin
@@ -30,28 +35,29 @@ html {
 	fontit, värit ym. ja sitten muuttaa haluamissasi
 	elementeissä tyylin toiseksi.*/
 
-	
+
 }
 
-body { 
-	
+body {
+
 	/*Kaiken sisällön ympärillä on body. 
 	Voit muuttaa myös bodyn taustaväriä tai
 	esim. lisätä paddingin, jotta elementit eivät 
 	olisi reunassa kiinni.*/
-	
+
 	/*Tällä koodilla voit tehdä niin, että yli 900px
 	leveässä näytössä body-tagi jää vain 900px leveäksi,
 	ja reunoille jää tyhjää. Voit muuttaa tätä miten haluat.*/
 	max-width: 900px;
-	margin: auto; /*tämä keskittää body-tagin sivusuunnassa*/
+	margin: auto;
+	/*tämä keskittää body-tagin sivusuunnassa*/
 
 }
 
 /*--------- HEADER ---------------------*/
 
 /*Header text on top of the menu*/
-header h1 { 
+header h1 {
 	/*Pääotsikko*/
 
 	/*Täällä kannattaa muokata background-, color- 
@@ -65,17 +71,16 @@ header h1 {
 	font-size: 60px;
 	background-color: #496B97;
 	text-align: center;
-	
+	border-radius: 8px;
 }
 
 /*--------- MAIN MENU ---------------------*/
 
 /*Menu*/
-#main-menu { 
-	
-	list-style-type: none; 
+#main-menu {
+
+	list-style-type: none;
 	border: none;
-	background-color: #be7c4d;
 	padding: 10px 10px;
 	text-align: center;
 	text-decoration: none;
@@ -85,52 +90,66 @@ header h1 {
 	transition-duration: 0.4s;
 	cursor: pointer;
 	border-radius: 8px;
-	
-	display: flex; flex-wrap:wrap; justify-content: center; 
-	margin: 30px;
-	padding: 20px;
+
+
+
 	/*Voit tehdä tästä flexboxin, 
 	niin valikon napit menevät vierekkäin*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
 	/*Laita tässä ja marginaalit paddingit paremmin, 
 	niin näyttää tyylikkäämmältä */
-	
+	margin: 30px;
+	padding: 20px;
+
 	/*Voi muokata täällä myös background-, color-arvoja.*/
-		
+	
 }
 
 /*Menu item*/
 #main-menu li {
 	/*Laita tässä ja marginaalit paddingit paremmin, 
 	niin näyttää tyylikkäämmältä */
-
+	margin: 10px;
+	padding: 5px;
+	
 	/*Voi muokata täällä myös background-, color-arvoja.*/
-
+	
 }
 
 /*Link in menu item*/
-#main-menu a { 
+#main-menu a {
 
-	text-decoration: none; /*poistaa linkin alleviivauksen*/
+	text-decoration: none;
+	/*poistaa linkin alleviivauksen*/
 
 	/*Voi muokata täällä myös background-, color- 
 	font-size- ja font-family-arvoja.*/
-
+	color: white;
+	margin: 4px 2px;
+	border-radius: 8px;
+	padding: 10px 10px;
+	background-color: #be7c4d;
+	font-size: 30px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,50%);
 }
 
 /*Menu item when mouse over*/
-#main-menu a:hover { 
-	
+#main-menu a:hover {
+
 	/*Tässä määritellään, miltä valikon linkki näyttää, 
 	kun kursori on sen päällä. Muuta paremmaksi */
-	color: white; 
+	color: white;
 	background: #855634;
 	transition-duration: 0.4s;
 }
 
 /*------- ARTICLE BUTTONS -------------------*/
 /*Button in end of each article*/
-.button { position: absolute;
+.button {
+	position: absolute;
 	border: none;
 	background-color: #be7c4d;
 	padding: 10px 10px;
@@ -149,7 +168,7 @@ header h1 {
 
 	/*Voi muokata täällä myös background-, color- 
 	font-size- ja font-family-arvoja.*/
-	
+
 	/*Tämä on a-elementti, ja se on oletuksena 
 		display: inline; 
 	Siksi sen kokoa tai paikkaa ym. ei voi muuttaa.
@@ -163,17 +182,18 @@ header h1 {
 	/*Tällä koodilla saat fancyn varjon :) 
 		box-shadow: 0px 2px 10px rgba(0,0,0,50%); 
 	*/
-
+	box-shadow: 0px 2px 10px rgba(0,0,0,50%);
 
 }
 
 /*Button when mouse over*/
-.button:hover { 
+.button:hover {
 	/*Tässä määritellään, nappi näyttää, 
 	kun kursori on sen päällä. Muuta paremmaksi */
-	color: white; 
+	color: white;
 	background: #855634;
-	
+
+
 	/*Voit halutessasi laittaa vaikka koko 
 	artikkelin muuttumaan jotenkin hiukan, 
 	kun sen päällä on kursori.. :) */
@@ -189,20 +209,24 @@ main {
 	vierekkäin leveässä näytössä. 
 	ja sitten artikkeleihin (ks. alla) esim. ,
 	jolloin artikkelit asettuvat vierekkäin.*/
-	
-	display: flex; flex-wrap:wrap; justify-content: center; 
-	
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
 
 }
 
 /*Frame of each "article"*/
 article {
-	max-width: 300px; /*Jos main on flexbox, 
+	max-width: 300px;
+	/*Jos main on flexbox, 
 	tämä tekee sen, että "artikkelit" mahtuvat vierekkäin.*/
-	
+
 	/*Yksittäisen artikkelin tausta:
 	Saatat haluta  muokata täällä background-, color- 
 	sekä font-size- ja font-family-arvoja.*/
+	background-color: #3D5A80;
 
 	/*Tärkeää: Laita tässä marginaalit ja paddingit paremmin, 
 	niin näyttää tyylikkäämmältä! Teksti, kuva ym. ei saa olla 
@@ -210,20 +234,20 @@ article {
 	margin tai padding).*/
 	margin: 10px;
 	padding: 15px;
-	background-color: #3D5A80;
 	padding-bottom: 50px;
+	border-radius: 8px;
 }
 
 
 
 /*article title*/
-article h2 { 
+article h2 {
 
 	/*Yksittäisen artikkelin otsikko*/
 
 	/*Kannattaa muokata täällä background-, color- 
 	font-size- ja font-family-arvoja.*/
-
+	font-size: 25px;
 	/*Saatat haluta muokata täällä myös 
 	background-, color-, margin- ja padding-
 	font-size- ja font-family-arvoja.*/
@@ -232,7 +256,7 @@ article h2 {
 }
 
 /*article text*/
-article p { 
+article p {
 	/*Artikkelin pienempi teksti*/
 
 	/*Saatat haluta muokata täällä 
@@ -242,8 +266,9 @@ article p {
 }
 
 /* "Images" */
-.article-image { 
-    max-width: 100%; /*Tämä tekee sen, että kuva ei mene yli reunasta.*/
+.article-image {
+	max-width: 100%;
+	/*Tämä tekee sen, että kuva ei mene yli reunasta.*/
 
 	/*Kuva voi olla koko artikkelin levyinen tai pienempi. 
 	Esim. alla olevalla kuvasta tulisi pienempi (=50%)
@@ -259,8 +284,8 @@ article p {
 footer {
 	/*Kannattaa laittaa footeriin vähintään padding 
 	ja ehkä eri taustaväri, jotta se erottuu hiukan.*/
-	
-	background-color:#BE7C4D;
+
+	background-color: #BE7C4D;
 	margin: 10px;
 	padding: 15px;
 }
