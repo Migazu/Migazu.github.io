@@ -7,140 +7,283 @@
   <title>Tietokone talo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <header class="p-3 bg-dark text-white">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <svg class="bi me-2" width="15" height="20" role="img" aria-label="Bootstrap">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
+  <header class="p-3 bg-blue text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="15" height="20" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
 
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-secondary">Koti</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Toiminnot</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Hinnat</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Usein kysyttyä</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Tietoa meistä</a></li>
-          </ul>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white">Koti</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Toiminnot</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Hinnat</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Usein kysyttyä</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Tietoa meistä</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+              aria-expanded="false">Klikkaa tätä</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" href="#">Toiminto</a></li>
+              <li><a class="dropdown-item" href="#">Toinen toiminto</a></li>
+              <li><a class="dropdown-item" href="#">Jotain muuta</a></li>
+            </ul>
+          </li>
+        </ul>
 
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control form-control-dark" placeholder="Hae..." aria-label="Search">
-          </form>
 
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">Kirjaudu</button>
-            <button type="button" class="btn btn-warning">Rekisteröidy</button>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Hae..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Kirjaudu</button>
+          <button type="button" class="btn btn-warning">Rekisteröidy</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <main>
+
+    <section>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-gray">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+              <h1 class="display-4 fw-normal">Bootstrap väittely</h1>
+              <p class="lead fw-normal">Bootstrap on oivallinen valinta, kun tarvitaan nopeasti tehtyä prototyyppiä tai kun budjetti ja aikataulu ovat kriittisiä tekijöitä. Sen valmiit tyylit ja komponentit mahdollistavat nopean kehityksen ilman tarvetta aloittaa nollasta. Tämä tekee Bootstrapista tehokkaan työkalun tilanteissa, joissa on paine saada sivusto pystyyn nopeasti.</p>
+
+                <p class="lead fw-normal">Toisaalta, kun sivuston visuaalinen erottuvuus on keskeinen tavoite tai kun projekti edellyttää erityistä räätälöintiä, Bootstrap voi olla liian geneerinen. Jos pyritään luomaan uniikki visuaalinen ilme tai tarvitaan täydellistä hallintaa sivuston rakenteesta ja tyylistä, saattaa olla parempi luottaa itse kirjoitettuun HTML- ja CSS-koodiin.</p>
+                
+                <p class="lead fw-normal">Lopullinen päätös riippuu siis projektin painotuksista. Bootstrap tarjoaa nopeaa ja kätevää kehitystä, kun taas itse kirjoitettu koodi mahdollistaa täyden hallinnan ja räätälöinnin. Valinta kannattaa tehdä sen perusteella, mikä parhaiten palvelee projektin tavoitteita ja vaatimuksia.</p>
+              <a class="btn btn-outline-secondary" href="#">Lue lisää</a>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Korjaukset ja huollot</h2>
+              <p class="lead">Tarjoamme huoltoja kaikenlaisille laitteille!</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto"
+           
+              style="width: 95%; height: 300px; border-radius: 21px 21px 21px 21px; margin: 21px;">
+              <h3 class="moi">KOLME AGRUMENTTIA BOOTSTRAPIN PUOLESTA</h3>
+              <p class="moi"> Todella nopea! </p>
+              <p class="moi"> Toimii eri selaimilla (yleinen toimivuus) </p>
+              <p class="moi"> Laaja yhteisö ja apuverkosto </p>
+            </div>
+          
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Myymälä</h2>
+              <p class="lead">Myyme myös käytettyjä komponentteja ja laitteita!</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto"
+              style="width: 95%; height: 300px; border-radius: 21px 21px 21px 21px; margin:21px ;">
+              <h3 class="moi">KOLME AGRUMENTTIA BOOTSTRAPPIA VASTAAN</h3>
+              <p class="moi"> Komponentit rajoittaa luovuutta </p>
+              <p class="moi"> Päivittämätön koodi voi rikkoa sivun tulevaisuudessa </p>
+              <p class="moi"> Raskas, isot bs-tiedostot </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <figure class="p-3 mb-0">
+              <blockquote class="blockquote">
+                <p>Erittäin tyytyväinen asiakas. Laatu, palvelu ja nopeus kohdallaan!</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0 text-muted">
+                Hanna K. <cite title="Source Title"></cite>
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+        <div class="col-md-8">
+          <div class="card p-3 text-end">
+            <figure class="mb-0">
+              <blockquote class="blockquote">
+                <p>Se nyt vaa on tyhmää maksaa liikaa.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0 text-muted">
+                Gigantti <cite title="Source Title"></cite>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
 
-    <main>
+    <section>
+      <h4>RAADIN ÄÄNET</h4>
+      <div class="row">
+        <div class="col-md-1"></div>
 
-      <section>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-              <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 fw-normal">Tietokone talo</h1>
-                <p class="lead fw-normal">Etsitkö luotettavaa ja ammattitaitoista kumppania tietokoneratkaisuihin? Olet
-                  saapunut oikeaan paikkaan! Tietokone Talo on ylpeä tarjotessaan laadukkaita tietokone- ja
-                  IT-palveluita asiakkailleen.</p>
-                <a class="btn btn-outline-secondary" href="#">Lue lisää</a>
-              </div>
-              <div class="product-device shadow-sm d-none d-md-block"></div>
-              <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-            </div>
-            <h2></h2>
-          </div>
-        </div>
 
-      </section>
+        <div class="col-md-2">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text  x="100px" y="100px" fill="#eceeef"
+                dy=".3em">🏃‍♀️</text>
+            </svg>
 
-      <section>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-              <div class="my-3 py-3">
-                <h2 class="display-5">Korjaukset ja huollot</h2>
-                <p class="lead">Tarjoamme huoltoja kaikenlaisille laitteille!</p>
-              </div>
-              <div class="bg-light shadow-sm mx-auto"
-                style="width: 95%; height: 300px; border-radius: 21px 21px 21px 21px; margin: 21px;">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
               </div>
             </div>
-            <h2></h2>
           </div>
-          <div class="col-md-6">
-            <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-              <div class="my-3 py-3">
-                <h2 class="display-5">Myymälä</h2>
-                <p class="lead">Myyme myös käytettyjä komponentteja ja laitteita!</p>
-              </div>
-              <div class="bg-light shadow-sm mx-auto"
-                style="width: 95%; height: 300px; border-radius: 21px 21px 21px 21px; margin:21px ;">
 
+
+        </div>
+        <div class="col-md-2">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">👨‍🎨</text>
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
               </div>
             </div>
-            <h2></h2>
           </div>
-        </div>
-      </section>
 
-      <section>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card p-3">
-              <figure class="p-3 mb-0">
-                <blockquote class="blockquote">
-                  <p>Erittäin tyytyväinen asiakas. Laatu, palvelu ja nopeus kohdallaan!</p>
-                </blockquote>
-                <figcaption class="blockquote-footer mb-0 text-muted">
-                  Hanna K. <cite title="Source Title"></cite>
-                </figcaption>
-              </figure>
+        </div>
+        <div class="col-md-2">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">🙋‍♀️</text>
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-            <h2>HOIHOIIIIIIII</h2>
           </div>
-          <div class="col-md-8">
-            <h2>HOOIHOII</h2>
-          </div>
+
+
         </div>
-      </section>
+        <div class="col-md-2">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">👨‍💼</text>
+            </svg>
 
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
 
-      <section>
-        <div class="row">
-          <div class="col-md-3">
-            <h2>HOIHOIIIIIIII</h2>
-
-          </div>
-          <div class="col-md-3">
-            <h2>HOOIHOII</h2>
-          </div>
-          <div class="col-md-3">
-            <h2>HOOIHOII</h2>
-
-          </div>
-          <div class="col-md-3">
-            <h2>HOOIHOII</h2>
-          </div>
         </div>
-      </section>
+
+        <div class="col-md-2">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">🧙‍♀️</text>
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-1"></div>
+
+      </div>
+    </section>
 
 
-    </main>
+  </main>
 
 
 
