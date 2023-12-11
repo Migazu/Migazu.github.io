@@ -153,7 +153,7 @@ article p {
 	margin: 0;
 	text-align: left;
 	flex: 1;
-
+	font-size: 17px;
 
 }
 
@@ -165,13 +165,15 @@ article p {
 	border-radius: 8px;
 	margin: 5px;
 	align-self: center;
-	margin: auto; /* Muutettu align-self: center; sijaan */
+	margin: auto; 
     margin-top: auto;
 	margin-bottom: 0;
 	border: 3px solid #be7c4d;
 }
 
-
+ol {
+	font-size: 17px;
+}
 
 
 
@@ -235,7 +237,7 @@ footer {
 
 	article p {
 		padding: 10px;
-		font-size: 14px;
+		font-size: 20px;
 	}
 }
 
