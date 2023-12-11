@@ -184,7 +184,22 @@ footer {
 }
 
 
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #be7c4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
 
+#scrollToTopBtn:hover {
+    background-color: #855634;
+}
 
 
 

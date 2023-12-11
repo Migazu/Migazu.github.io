@@ -125,10 +125,38 @@
 
     </main>
 
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Ylös">Top</button>
 
 
 
     <footer>@Mika Venäläinen 2023 </footer>
+
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+
+    <script>
+       
+        var mybutton = document.getElementById("scrollToTopBtn");
+
+       
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        
+        function scrollToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
 
 
 </body>
