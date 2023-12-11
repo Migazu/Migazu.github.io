@@ -1,0 +1,248 @@
+html {
+
+	background-image: url(pictures/tausta.jpg);
+	font-family: Inconsolata;
+	color: white;
+
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: Karla;
+		color: white;
+	}
+
+
+
+
+
+}
+
+body {
+
+
+	max-width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+
+
+
+
+}
+
+
+header h1 {
+
+
+	font-size: 80px;
+	background-color: #3D5A80;
+	text-align: center;
+	padding-top: 20px;
+	margin: 0;
+	text-decoration: underline;
+	background-image: linear-gradient(to right, #3D5A80, #be7c4d);
+
+}
+
+
+#main-menu {
+
+	list-style-type: none;
+	transition-duration: 0.4s;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	background-image: linear-gradient(to right, #3D5A80, #be7c4d);
+}
+
+
+#main-menu li {
+
+	margin: 10px;
+	padding: 5px;
+
+
+}
+
+
+#main-menu a {
+
+	text-decoration: none;
+	color: white;
+	margin: 4px 2px;
+	border-radius: 8px;
+	padding: 10px 10px;
+	background-color: #be7c4d;
+	font-size: 22px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 50%);
+}
+
+
+#main-menu a:hover {
+	color: white;
+	background: #855634;
+	transition-duration: 0.4s;
+}
+
+
+
+main {
+
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	max-width: auto;
+	margin: auto;
+	justify-content: space-around;
+	align-items: stretch;
+
+
+}
+
+
+
+
+article {
+
+
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #3D5A80;
+	max-width: 400px;
+	min-height: 550px;
+	margin: 10px;
+	padding: 15px;
+	border-radius: 8px;
+
+}
+
+
+
+article h2 {
+
+	font-size: 25px;
+	margin: 10px;
+	background-color: #2b415f;
+	padding: 10px;
+	text-align: center;
+
+
+}
+
+
+
+
+article p {
+
+	padding: 20px;
+	margin: 0;
+	text-align: left;
+	flex: 1;
+
+
+}
+
+
+.article-image {
+
+	width: 100%;
+	max-width: 300px;
+	border-radius: 8px;
+	margin: 5px;
+	align-self: center;
+	margin: auto; /* Muutettu align-self: center; sijaan */
+    margin-top: auto;
+	margin-bottom: 0;
+	border: 3px solid #be7c4d;
+}
+
+
+
+
+
+
+footer {
+	background-image: linear-gradient(to right, #3D5A80, #be7c4d);
+	padding: 20px;
+	margin-top: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media query mobiililaitteille */
+@media only screen and (max-width: 600px) {
+	body {}
+
+	header h1 {
+		font-size: 40px;
+	}
+
+	#main-menu a {
+		font-size: 16px;
+	}
+
+	article {
+		max-width: 100%;
+		padding: 10px;
+	}
+
+	article h2 {
+		font-size: 20px;
+		margin: 5px;
+	}
+
+	article p {
+		padding: 10px;
+		font-size: 14px;
+	}
+}
+
+/* Media query tableteille */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+	body {}
+
+	header h1 {
+		font-size: 60px;
+	}
+
+	#main-menu a {
+		font-size: 18px;
+	}
+}
+
+/* Media query suurille näytöille */
+@media only screen and (min-width: 1025px) {
+	body {}
+
+	header h1 {
+		font-size: 80px;
+	}
+
+	#main-menu a {
+		font-size: 22px;
+	}
+}
