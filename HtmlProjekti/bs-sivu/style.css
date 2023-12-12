@@ -1,21 +1,21 @@
 html {
 
-	background-image: url(kuvat/tausta.jpg) !important;
+    background-image: url(kuvat/tausta.jpg) !important;
     background-size: cover;
     background-position: center;
-	font-family: Inconsolata;
-	
+    font-family: Inconsolata;
 
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-family: Karla;
-		
-	}
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Karla;
+
+    }
 
 
 
@@ -25,89 +25,118 @@ html {
 
 
 body {
+    background-image: url(kuvat/tausta.jpg) !important;
+    font-family: Inconsolata;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.d-flex {
+    display: flex;
   }
+  
 
 
-
-
-header h1{
+header h1 {
     font-size: 80px;
-	text-align: center;
-	padding-top: 20px;
-	margin: 0;
-	text-decoration: underline;
-	background-image: linear-gradient(to right, #3D5A80, #be7c4d);
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    text-decoration: underline;
+    background-image: linear-gradient(to right, #3D5A80, #be7c4d);
     color: white;
-    
+
 
 
 }
 
-h2{
+h2 {
     font-size: 25px;
-	margin: 10px;
-	background-color: #2b415f;
-	padding: 10px;
-	text-align: center;
+    margin: 10px;
+    background-color: #2b415f;
+    padding: 10px;
+    text-align: center;
     color: white !important;
 }
 
-header{
-    background-image: linear-gradient(to right, #3D5A80, #be7c4d);  
+header {
+    background-image: linear-gradient(to right, #3D5A80, #be7c4d);
+
+
+}
+
+.container-fluid {
+    flex: 1;
 }
 
 .container-fluid>.row {
     margin-left: 0;
     margin-right: 0;
-  }
+}
 
-  .container>.row {
+.container>.row {
     margin-left: 0;
     margin-right: 0;
-  }
+}
 
-article{
+.row{
+    margin: 0px !important;
+}
+
+article {
     margin: 15px;
     background-color: #3D5A80 !important;
+    overflow: hidden;
+    
 }
 
 .card-img-top {
 
-	width: 100%;
-	max-width: 300px;
-	border-radius: 8px;
-	margin: 15px !important;
-	align-self: center;
-	border: 3px solid #be7c4d;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px !important;
+    align-self: center;
+    border: 3px solid #be7c4d;
+    
+
 }
 
 button {
 
-	text-decoration: none;
-	color: white;
-	margin: 4px 2px;
-	border-radius: 8px;
-	padding: 10px 10px;
-	background-color: #be7c4d !important;
-	font-size: 22px;
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 50%);
+    text-decoration: none;
+    color: white !important;
+    margin: 4px 2px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    background-color: #be7c4d !important;
+    font-size: 22px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 50%);
+    margin-bottom: 10px !important; 
+    border: 1px solid #be7c4d !important;
 }
 
 
 
+li{
+    color: white !important;
+    background-color: #2b415f !important;
+}
 
-p{
+
+p {
     font-family: Inconsolata;
-    font-size: 17px ;
+    font-size: 17px;
     color: white;
 }
 
 
-
-
-
+form{
+    align-items: center !important;
+}
 
 
 
@@ -134,10 +163,68 @@ p{
 
 
 footer {
-	background-image: linear-gradient(to right, #3D5A80, #be7c4d);
-	padding: 20px;
-	margin-top: auto;
+    background-image: linear-gradient(to right, #3D5A80, #be7c4d);
+    padding: 20px;
     font-family: Inconsolata;
     color: white;
+}
 
+
+
+
+
+
+
+/* Media query mobiililaitteille */
+@media only screen and (max-width: 600px) {
+	body {}
+
+	header h1 {
+		font-size: 40px;
+	}
+
+	#main-menu a {
+		font-size: 16px;
+	}
+
+	article {
+		max-width: 100%;
+		padding: 10px;
+	}
+
+	article h2 {
+		font-size: 20px;
+		margin: 5px;
+	}
+
+	article p {
+		padding: 10px;
+		font-size: 20px;
+	}
+}
+
+/* Media query tableteille */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+	body {}
+
+	header h1 {
+		font-size: 60px;
+	}
+
+	#main-menu a {
+		font-size: 18px;
+	}
+}
+
+/* Media query suurille näytöille */
+@media only screen and (min-width: 1025px) {
+	body {}
+
+	header h1 {
+		font-size: 80px;
+	}
+
+	#main-menu a {
+		font-size: 22px;
+	}
 }
