@@ -38,7 +38,9 @@ body {
     display: flex;
   }
   
-
+h1{
+    color: white !important;
+}
 
 header h1 {
     font-size: 80px;
@@ -64,6 +66,8 @@ h2 {
 
 header {
     background-image: linear-gradient(to right, #3D5A80, #be7c4d);
+    border-radius: 8px !important;
+    padding-bottom: 5px !important;
 
 
 }
@@ -90,6 +94,8 @@ article {
     margin: 15px;
     background-color: #3D5A80 !important;
     overflow: hidden;
+    border-radius: 8px;
+
     
 }
 
@@ -110,7 +116,7 @@ button {
     text-decoration: none;
     color: white !important;
     margin: 4px 2px;
-    border-radius: 8px;
+    border-radius: 8px !important;
     padding: 10px 10px;
     background-color: #be7c4d !important;
     font-size: 22px;
@@ -120,6 +126,11 @@ button {
 }
 
 
+
+a{
+     
+   color: white !important;
+}
 
 li{
     color: white !important;
@@ -133,33 +144,14 @@ p {
     color: white;
 }
 
+.kysy{
+    font-size: 30px;
+    text-align: center;
+}
 
 form{
     align-items: center !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer {
@@ -167,6 +159,7 @@ footer {
     padding: 20px;
     font-family: Inconsolata;
     color: white;
+    border-radius: 8px !important;
 }
 
 
