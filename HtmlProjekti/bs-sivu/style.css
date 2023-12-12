@@ -177,7 +177,7 @@ footer {
 
 /* Media query mobiililaitteille */
 @media only screen and (max-width: 600px) {
-	body {}
+	
 
 	header h1 {
 		font-size: 40px;
@@ -205,7 +205,7 @@ footer {
 
 /* Media query tableteille */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-	body {}
+	
 
 	header h1 {
 		font-size: 60px;
@@ -218,7 +218,7 @@ footer {
 
 /* Media query suurille näytöille */
 @media only screen and (min-width: 1025px) {
-	body {}
+	
 
 	header h1 {
 		font-size: 80px;
