@@ -8,6 +8,11 @@
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;700&family=Karla:wght@200;300;400;700&display=swap"
+    rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
     integrity="sha384-4KQqnJqzD1zrMA9QhlT3qVbNxv0Gkty6jcUMiQ7J0ir9z5eZVMqU5MlMz9TEy7md"
     crossorigin="anonymous"></script>
@@ -41,21 +46,6 @@
                 <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
               </form>
 
-              <div class="dropdown text-end">
-                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-                </a>
-                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                  <li><a class="dropdown-item" href="#">New project...</a></li>
-                  <li><a class="dropdown-item" href="#">Settings</a></li>
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
-              </div>
             </div>
           </div>
         </header>
@@ -215,20 +205,23 @@
 
   </div>
 
+
+  <footer>@Mika Venäläinen 2023 </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Sulkee kaikki Collapse-elementit sivun latauksen jälkeen
-        var collapseElements = document.querySelectorAll('.collapse');
-        collapseElements.forEach(function(collapse) {
-          var collapseInstance = new bootstrap.Collapse(collapse, { toggle: false });
-        });
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Sulkee kaikki Collapse-elementit sivun latauksen jälkeen
+      var collapseElements = document.querySelectorAll('.collapse');
+      collapseElements.forEach(function (collapse) {
+        var collapseInstance = new bootstrap.Collapse(collapse, { toggle: false });
       });
-    </script>
-    
+    });
+  </script>
+
 
 </body>
 
