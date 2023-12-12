@@ -1,31 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap sivu</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+    integrity="sha384-4KQqnJqzD1zrMA9QhlT3qVbNxv0Gkty6jcUMiQ7J0ir9z5eZVMqU5MlMz9TEy7md" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+  <div class="container-fluid">
 
+    <!-- Rivi 1 -->
+    <div class="row">
+      <div class="col-md-12">
+        <header class="p-3 mb-3 border-bottom">
+          <h1>Videopelejä eri vuosilta</h1>
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                  <use xlink:href="#bootstrap"></use>
+                </svg>
+              </a>
 
-<h1>tähän sit jotain :D</h1>
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Inventory</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+              </ul>
 
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </form>
 
+              <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
 
+    <!-- Rivi 2 -->
+    <div class="row">
+      <div class="col-md-4">
+        <article class="card">
+          <img class="card-img-top" src="" alt="Tennis For Two"
+            style="max-height: 200px; width: auto; display: block; margin: 0 auto;">
+          <div class="card-body">
+            <h2 class="card-title">Videopelien alku</h2>
+            <p class="card-text">Videopelien varhaisina päivinä 1950-luvulla syntyi "Tennis for Two" ja
+              "Spacewar!", jotka olivat ensimmäisiä elektronisia pelejä. Ne olivat yksinkertaisia, mutta
+              ne muodostivat perustan tuleville peleille, luoden alkupisteen videopelien kehitykselle.</p>
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#tennisForTwo"
+              aria-expanded="true">Näytä
+            </button>
+            <div id="tennisForTwo" class="collapse show">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tennis for Two (1958)</li>
+                <li class="list-group-item">Spacewar! (1962)</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card">
+          <img class="card-img-top" src="" alt="Super Mario Bros."
+            style="max-height: 200px; width: auto; display: block; margin: 0 auto;">
+          <div class="card-body">
+            <h2 class="card-title">Kehitys 8-bittiin</h2>
+            <p class="card-text">1970-luvun loppupuolelta alkaen videopelit saivat jalansijaa
+              kuluttajamarkkinoilla. Atari 2600 toi mukanaan "Pongin" ja "Space Invadersin" kaltaiset
+              klassikot, kun taas 1980-luvulla Nintendo NES ja Sega Master System avasivat tien monipuolisille
+              kotipelaamiskokemuksille.</p>
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#kehitys8bittiin"
+              aria-expanded="true">Näytä
+            </button>
+            <div id="kehitys8bittiin" class="collapse show">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Pong (1972)</li>
+                <li class="list-group-item">Space Invaders (1978)</li>
+                <li class="list-group-item">Pac-Man (1980)</li>
+                <li class="list-group-item">Super Mario Bros. (1985)</li>
+                <li class="list-group-item">The Legend of Zelda (1986)</li>
+                <li class="list-group-item">Tetris (1984)</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card">
+          <img class="card-img-top" src="pics/sf2" alt="Street Fighter II"
+            style="max-height: 200px; width: auto; display: block; margin: 0 auto;">
+          <div class="card-body">
+            <h2 class="card-title">16-bittiset markkinoille</h2>
+            <p class="card-text">1990-luvulla videopelimarkkinat kokivat uuden virstanpylvään 16-bittisten pelikonsolien
+              myötä. Sega Genesis ja Super Nintendo toivat mukanaan "Sonic the Hedgehogin" ja "Super Mario Worldin"
+              kaltaisia ikonisia pelejä, syventäen pelaajien kokemuksia.</p>
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#markkinoille"
+              aria-expanded="true">Näytä
+            </button>
+            <div id="markkinoille" class="collapse show">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Super Mario World (1990)</li>
+                <li class="list-group-item">Sonic the Hedgehog (1991)</li>
+                <li class="list-group-item">Street Fighter II (1991)</li>
+                <li class="list-group-item">The Legend of Zelda: A Link to the Past (1991)</li>
+                <li class="list-group-item">Mortal Kombat (1992)</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
 
+    <!-- Rivi 3 -->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Rivi 3</h2>
+      </div>
+      <div class="col-md-6">
+        <h2>Rivi 3</h2>
+      </div>
+    </div>
 
+    <!-- Rivi 4 -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Rivi 4</h2>
+      </div>
+    </div>
 
+    <!-- Rivi 5 -->
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Rivi 5</h2>
+      </div>
+      <div class="col-md-3">
+        <h2>Rivi 5</h2>
+      </div>
+      <div class="col-md-3">
+        <h2>Rivi 5</h2>
+      </div>
+      <div class="col-md-3">
+        <h2>Rivi 5</h2>
+      </div>
+    </div>
 
+  </div>
 
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 </body>
 
