@@ -1,6 +1,8 @@
 html {
 
 	background-image: url(kuvat/tausta.jpg) !important;
+    background-size: cover;
+    background-position: center;
 	font-family: Inconsolata;
 	
 
