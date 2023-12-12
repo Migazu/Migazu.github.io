@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+  <div class="container-fluid">
   <header class="p-3 mb-3 border-bottom">
     <div class="container-fluid">
       <h1>Videopelejä eri vuosilta</h1>
@@ -32,27 +32,22 @@
             </svg>
           </a>
 
-
-
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control" placeholder="Hae..." aria-label="Search">
+          <form id="searchForm" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input id="searchInput" type="search" class="form-control" placeholder="Hae..." aria-label="Search">
           </form>
-
         </div>
       </div>
+    </div>
   </header>
 
-  <div class="container-fluid">
-
+  
     <!-- Rivi 1 -->
     <section>
       <div class="row">
         <div class="col-md-12">
-
         </div>
       </div>
-  </div>
-  <section>
+    </section>
 
 
     <section>
@@ -67,8 +62,7 @@
               <p class="card-text">Videopelien varhaisina päivinä 1950-luvulla syntyi "Tennis for Two" ja
                 "Spacewar!", jotka olivat ensimmäisiä elektronisia pelejä. Ne olivat yksinkertaisia, mutta
                 ne muodostivat perustan tuleville peleille, luoden alkupisteen videopelien kehitykselle.</p>
-              <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#tennisForTwo"
-                aria-expanded="true">Näytä
+              <button class="btn btn-dark" data-bs-toggle="manual" data-bs-target="#tennisForTwo">Näytä
               </button>
               <div id="tennisForTwo" class="collapse show">
                 <ul class="list-group list-group-flush">
@@ -89,8 +83,7 @@
                 kuluttajamarkkinoilla. Atari 2600 toi mukanaan "Pongin" ja "Space Invadersin" kaltaiset
                 klassikot, kun taas 1980-luvulla Nintendo NES ja Sega Master System avasivat tien monipuolisille
                 kotipelaamiskokemuksille.</p>
-              <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#kehitys8bittiin"
-                aria-expanded="true">Näytä
+              <button class="btn btn-dark" data-bs-toggle="manual" data-bs-target="#kehitys8bittiin">Näytä
               </button>
               <div id="kehitys8bittiin" class="collapse show">
                 <ul class="list-group list-group-flush">
@@ -116,8 +109,7 @@
                 myötä. Sega Genesis ja Super Nintendo toivat mukanaan "Sonic the Hedgehogin" ja "Super Mario
                 Worldin"
                 kaltaisia ikonisia pelejä, syventäen pelaajien kokemuksia.</p>
-              <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#markkinoille"
-                aria-expanded="true">Näytä
+              <button class="btn btn-dark" data-bs-toggle="manual" data-bs-target="#markkinoille">Näytä
               </button>
               <div id="markkinoille" class="collapse show">
                 <ul class="list-group list-group-flush">
@@ -145,7 +137,7 @@
                 siirtymisen kaksiulotteisista peleistä kohti kolmiulotteisia grafiikoita. "Super Mario 64" ja
                 "Quake"
                 olivat pioneereja, jotka mullistivat pelien visuaalisen ilmaisun ja pelimekaniikan.</p>
-              <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#kaksu" aria-expanded="true">Näytä
+              <button class="btn btn-dark" data-bs-toggle="manual" data-bs-target="#kaksu">Näytä
               </button>
               <div id="kaksu" class="collapse show">
                 <ul class="list-group list-group-flush">
@@ -170,8 +162,7 @@
                 siirtymisen kaksiulotteisista peleistä kohti kolmiulotteisia grafiikoita. "Super Mario 64" ja
                 "Quake"
                 olivat pioneereja, jotka mullistivat pelien visuaalisen ilmaisun ja pelimekaniikan.</p>
-              <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#moderni"
-                aria-expanded="true">Näytä
+              <button class="btn btn-dark" data-bs-toggle="manual" data-bs-target="#moderni">Näytä
               </button>
               <div id="moderni" class="collapse show">
                 <ul class="list-group list-group-flush">
@@ -212,67 +203,60 @@
       </div>
     </div>
 
-    </div>
+  </div>
 
 
-    <footer>@Mika Venäläinen 2023 </footer>
+  <footer>@Mika Venäläinen 2023 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Sulkee kaikki Collapse-elementit sivun latauksen jälkeen
-        var collapseElements = document.querySelectorAll('.collapse');
-        collapseElements.forEach(function (collapse) {
-          var collapseInstance = new bootstrap.Collapse(collapse, { toggle: false });
-        });
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Sulkee kaikki Collapse-elementit sivun latauksen jälkeen
+      var collapseElements = document.querySelectorAll('.collapse');
+      collapseElements.forEach(function (collapse) {
+        var collapseInstance = new bootstrap.Collapse(collapse, { toggle: false });
       });
-    </script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var searchForm = document.getElementById('searchForm');
+      var searchForm = document.getElementById('searchForm');
 
-        searchForm.addEventListener('submit', function (event) {
-          event.preventDefault();
-          var searchInput = document.getElementById('searchInput');
-          var searchTerm = searchInput.value.toLowerCase();
+      searchForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var searchInput = document.getElementById('searchInput');
+        var searchTerm = searchInput.value.toLowerCase();
 
-          // Määritä hakusanoihin liittyvät ohjaukset
-          var articleMappings = {
-            'videopelien alku': '#tennisForTwo',
-            'kehitys 8-bittiin': '#kehitys8bittiin',
-            '16-bittiset markkinat': '#markkinoille',
-            'kaksiulotteisesta kolmiulotteiseksi': '#kaksu',
-            'modernien pelien aika': '#moderni'
-            // Lisää tarvittavat hakusana-artikkeli -parit
-          };
+        // Määritä hakusanoihin liittyvät ohjaukset
+        var articleMappings = {
+          'videopelien alku': '#tennisForTwo',
+          'kehitys 8-bittiin': '#kehitys8bittiin',
+          '16-bittiset markkinat': '#markkinoille',
+          'kaksiulotteisesta kolmiulotteiseksi': '#kaksu',
+          'modernien pelien aika': '#moderni'
+          // Lisää tarvittavat hakusana-artikkeli -parit
+        };
 
-          // Tarkista, onko hakusana määritelty ja ohjaa sitten oikeaan artikkeliin
-          if (articleMappings.hasOwnProperty(searchTerm)) {
-            var targetArticle = document.querySelector(articleMappings[searchTerm]);
-            if (targetArticle) {
-              window.location.href = articleMappings[searchTerm];
-            } else {
-              console.log('Artikkelia ei löytynyt hakusanalle: ' + searchTerm);
-            }
+        // Tarkista, onko hakusana määritelty ja ohjaa sitten oikeaan artikkeliin
+        if (articleMappings.hasOwnProperty(searchTerm)) {
+          var targetArticle = document.querySelector(articleMappings[searchTerm]);
+          if (targetArticle) {
+            var collapseInstance = new bootstrap.Collapse(targetArticle, { toggle: true });
           } else {
-            console.log('Hakusanaa ei ole määritelty ohjaukselle: ' + searchTerm);
+            console.log('Artikkelia ei löytynyt hakusanalle: ' + searchTerm);
           }
-        });
+        } else {
+          console.log('Hakusanaa ei ole määritelty ohjaukselle: ' + searchTerm);
+        }
       });
-    </script>
+    });
+  </script>
 
-    <script>
-      function goBack() {
-        window.history.back();
-      }
-    </script>
-
-
-
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 
 </body>
 
