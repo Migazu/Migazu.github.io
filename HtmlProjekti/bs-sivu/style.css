@@ -1,6 +1,6 @@
 html {
 
-	background-image: url(kuvat/tausta.jpg);
+	background-image: url(kuvat/tausta.jpg) !important;
 	font-family: Inconsolata;
 	
 
@@ -69,6 +69,16 @@ header{
 article{
     margin: 15px;
     background-color: #3D5A80 !important;
+}
+
+.card-img-top {
+
+	width: 100%;
+	max-width: 300px;
+	border-radius: 8px;
+	margin: 15px !important;
+	align-self: center;
+	border: 3px solid #be7c4d;
 }
 
 button {
